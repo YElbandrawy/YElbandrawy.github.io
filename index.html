@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youssef Elbandrawy</title>
+  <meta name="description" content="Youssef Eid Elbandrawy, backend engineer from Egypt. I work with Node.js, Python and AWS, mostly on immigration software right now.">
+  <meta property="og:title" content="Youssef Elbandrawy">
+  <meta property="og:description" content="Backend engineer from Egypt. Node.js, Python, AWS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yelbandrawy.github.io/">
+  <meta property="og:image" content="https://yelbandrawy.github.io/assets/photo.jpg">
+  <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1815" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="top">
+    <a class="sig" href="#">youssef<span>.</span></a>
+    <nav>
+      <a href="#work">work</a>
+      <a href="#before">before</a>
+      <a href="#about">about</a>
+      <a href="#hi">contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hand hello-note">hi there,</p>
+        <h1>I'm Youssef.<br><em>I make backends</em> that survive the real world.</h1>
+        <p class="lede">I write server software, mostly in Node.js and Python, and run it on AWS. Right now I'm at <strong>Get In Canada</strong>, building the system immigration firms use to manage their cases. A lot of that job is <mark>dealing with government systems that were never meant to be automated</mark>, and I enjoy that more than I probably should.</p>
+        <p class="links">
+          <a class="btn" href="mailto:yosefeid350@gmail.com">Email me</a>
+          <a href="https://github.com/YElbandrawy">GitHub</a>
+          <a href="https://linkedin.com/in/youssef-elbandrawy">LinkedIn</a>
+          <a href="assets/Youssef-Eid-Elbandrawy-Resume.pdf">CV ↓</a>
+        </p>
+      </div>
+      <figure class="polaroid">
+        <img src="assets/photo.jpg" alt="Youssef Elbandrawy" width="800" height="800">
+        <figcaption class="hand">that's me ↑</figcaption>
+      </figure>
+    </section>
+
+    <div class="now">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>Now:</b> Software Engineer at Get In Canada, working remotely with the Montreal team</span>
+    </div>
+
+    <!-- WORK -->
+    <section class="block" id="work">
+      <div class="label">
+        <h2>What I'm working on</h2>
+        <p class="meta">Get In Canada<br>Dec 2025 – now</p>
+      </div>
+
+      <div class="body">
+        <h3 class="big">A case management system for immigration law firms</h3>
+        <p>This is the biggest thing I've built. Firms use it to run their clients' applications from start to finish: documents, forms, payments and deadlines. Each firm's data stays private to that firm. I designed it and wrote most of it, from the backend and the frontend to the cloud setup it runs on.</p>
+
+        <article class="story">
+          <p class="hand margin-note">the hard one <span class="arr-side">→</span><span class="arr-down">↓</span></p>
+          <h4>Filling government forms without breaking them</h4>
+          <p>Canada's official immigration forms are PDFs with digital signatures and barcodes built in, and <mark>the usual ways of filling them in break those</mark>. That's a known headache in the industry. After a lot of digging I found a way to fill them automatically while keeping the official forms valid, and built it into a service the whole platform uses. A crawler keeps the library of forms up to date, so new ones don't have to be set up by hand.</p>
+
+          <figure class="sketch">
+            <svg class="wide" viewBox="0 0 640 200" role="img" aria-label="The client's details go into the form service, which produces the official government form filled in, with its signatures and barcodes still valid.">
+              <defs>
+                <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+                <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 9 5 1 9" fill="none" class="ink-stroke" stroke-width="1.6" stroke-linecap="round"/></marker>
+              </defs>
+              <g filter="url(#rough)" class="shapes">
+                <rect x="14" y="50" width="170" height="80" rx="6" class="paper-b"/>
+                <rect x="235" y="50" width="170" height="80" rx="6" class="paper-a"/>
+                <rect x="456" y="50" width="170" height="80" rx="6" class="paper-c"/>
+                <path d="M188 90 C 205 82, 215 82, 228 90" class="line" marker-end="url(#ah)"/>
+                <path d="M409 90 C 426 82, 436 82, 449 90" class="line" marker-end="url(#ah)"/>
+              </g>
+              <text x="99" y="86" class="t-strong">client's details</text>
+              <text x="99" y="110" class="t-soft">from their file</text>
+              <text x="320" y="86" class="t-strong">form service</text>
+              <text x="320" y="110" class="t-soft">fills it in</text>
+              <text x="541" y="86" class="t-strong">official form</text>
+              <text x="541" y="110" class="t-soft">ready to submit</text>
+              <text x="541" y="172" class="t-hand accent">signatures still valid ✓</text>
+              <text x="99" y="30" class="t-hand">hundreds of fields…</text>
+            </svg>
+            <svg class="tall" viewBox="0 0 300 420" role="img" aria-label="The client's details go into the form service, which produces the official government form filled in, with its signatures and barcodes still valid.">
+              <defs>
+                <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 9 5 1 9" fill="none" class="ink-stroke" stroke-width="1.6" stroke-linecap="round"/></marker>
+              </defs>
+              <g filter="url(#rough)" class="shapes">
+                <rect x="55" y="14" width="190" height="76" rx="6" class="paper-b"/>
+                <rect x="55" y="140" width="190" height="76" rx="6" class="paper-a"/>
+                <rect x="55" y="266" width="190" height="76" rx="6" class="paper-c"/>
+                <path d="M150 94 C 142 108, 142 120, 150 132" class="line" marker-end="url(#ah2)"/>
+                <path d="M150 220 C 142 234, 142 246, 150 258" class="line" marker-end="url(#ah2)"/>
+              </g>
+              <text x="150" y="48" class="t-strong">client's details</text>
+              <text x="150" y="70" class="t-soft">from their file</text>
+              <text x="150" y="174" class="t-strong">form service</text>
+              <text x="150" y="196" class="t-soft">fills it in</text>
+              <text x="150" y="300" class="t-strong">official form</text>
+              <text x="150" y="322" class="t-soft">ready to submit</text>
+              <text x="150" y="384" class="t-hand accent">signatures still valid ✓</text>
+            </svg>
+          </figure>
+        </article>
+
+        <div class="trio">
+          <article class="panel sage">
+            <p class="kicker">AI · documents</p>
+            <h4>Reading documents with AI</h4>
+            <p>Clients upload passports, visas and other documents. AI pulls out the details and flags anything that doesn't add up for a person to review. I spent a lot of time making it efficient, and it now runs at <span class="figure">4–7×</span> lower AI cost than where it started.</p>
+          </article>
+          <article class="panel sand">
+            <p class="kicker">Chrome extension</p>
+            <h4>Autofill for government portals</h4>
+            <p>Some applications have to be submitted through government websites, field by field. The extension fills those long forms in from the client's file, and it keeps working when the websites change.</p>
+          </article>
+          <article class="panel slate">
+            <p class="kicker">foundations</p>
+            <h4>Built to be trusted</h4>
+            <p>It handles people's passports and payments, so a lot of the work is invisible: client data stays in Canada, every firm's data is kept apart, and payment records can't be quietly changed after the fact.</p>
+          </article>
+        </div>
+
+        <h3 class="sub">Smaller things there</h3>
+        <ul class="list">
+          <li><b>Eligibility checker.</b> Works out someone's Express Entry score and which immigration programs they might qualify for, with a dashboard for the team.</li>
+          <li><b>A bot that watches immigration rules.</b> It keeps an eye on provincial immigration pages and summarises what changed, so nobody has to check them by hand.</li>
+          <li><b>Audience research tool.</b> Gathers the questions people ask most about moving to Canada, to help decide what content to make.</li>
+          <li><b>Email migration.</b> Moved the company's email to a self-hosted setup on AWS, which cut its cost a lot.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BEFORE -->
+    <section class="block" id="before">
+      <div class="label">
+        <h2>Before that</h2>
+        <p class="meta">Eyego · Cairo<br>Jun – Dec 2025</p>
+      </div>
+      <div class="body">
+        <p class="intro-line">Six months of IoT, sensors and forecasting for clients across the Gulf.</p>
+        <div class="cards">
+          <article class="card">
+            <p class="kicker">Domino's Pizza · UAE &amp; KSA</p>
+            <p>Built the data pipeline for in-store temperature and humidity sensors, with a dashboard that shows food-safety compliance.</p>
+          </article>
+          <article class="card">
+            <p class="kicker">Jabal Omar Mall · Mecca</p>
+            <p>Forecasting visitor flow, so the team can see crowds coming and plan ahead.</p>
+          </article>
+          <article class="card trophy">
+            <p class="kicker">UN Tourism AI Challenge</p>
+            <p>I was on the team whose analytics platform <b>won</b>. 🏆</p>
+          </article>
+          <article class="card">
+            <p class="kicker">Internal tools · GCP</p>
+            <p>Set up and looked after the company's internal tools on Google Cloud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="block" id="about">
+      <div class="label">
+        <h2>Where I come from</h2>
+        <p class="meta">Tanta University<br>2019 – 2024</p>
+      </div>
+      <div class="body">
+        <p>I studied <b>Computer &amp; Automatic Control Engineering</b>, so I started out writing C for microcontrollers before I moved to servers. Some of that still shows: <mark>I care a lot about what happens when things fail.</mark></p>
+        <p>For my graduation project I led a team building a small driver-assistance system with adaptive cruise control and lane keeping. A Raspberry Pi ran lane detection with OpenCV, and an STM32 handled control, with the two talking over UART.</p>
+        <p>Along the way I mentored new members of IEEE's embedded systems team, did a training stint at the <b>Egyptian Space Agency</b> learning how satellite on-board computers work, and learned Express properly by building <a href="https://github.com/YElbandrawy">Natours</a>, a tour-booking app.</p>
+
+        <div class="toolbox">
+          <p class="hand toolbox-title">what's in my toolbox</p>
+          <p><span>every day</span> Linux · Node.js · Express · PostgreSQL · MongoDB · RabbitMQ · Docker · AWS</p>
+          <p><span>often</span> Python &amp; FastAPI · React · GitHub Actions · Jest · Nginx</p>
+          <p><span>sometimes</span> Java · C/C++ · Kafka · GCP · OpenCV</p>
+          <p><span>i speak</span> Arabic · English · a little German</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="hi" id="hi">
+      <p class="hand">so…</p>
+      <h2>Got an interesting problem?</h2>
+      <p>I'm open to backend and full-stack roles, remote or in Cairo. I read everything that lands here:</p>
+      <a class="mail" href="mailto:yosefeid350@gmail.com">yosefeid350@gmail.com</a>
+      <p class="links center">
+        <a href="https://github.com/YElbandrawy">GitHub</a>
+        <a href="https://linkedin.com/in/youssef-elbandrawy">LinkedIn</a>
+        <a href="assets/Youssef-Eid-Elbandrawy-Resume.pdf">CV (PDF)</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Youssef Elbandrawy</span>
+  </footer>
+</body>
+</html>
